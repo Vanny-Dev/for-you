@@ -1,4 +1,7 @@
 let items = document.querySelectorAll('.slider .item');
+let next = document.getElementById('next');
+let prev = document.getElementById('prev');
+
 let active = 3; // The active index you want to start with.
 
 function loadShow() {
@@ -34,3 +37,12 @@ items.forEach((item, index) => {
 });
 
 loadShow();  // Initial load
+
+next.onclick = function(){
+    active = active + 1 < items.length ? active + 1 : active;
+    loadShow();
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : active;
+    loadShow();
+}
