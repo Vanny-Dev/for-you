@@ -16,6 +16,7 @@
     height: 50px;
     opacity: 0;
     animation: heartDrop 4s ease-in infinite;
+    filter: drop-shadow(7px 5px 4px #000);
   }
 
   .heart::before,

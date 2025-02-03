@@ -21,6 +21,9 @@
   <!-- Notes CSS -->
   <link rel="stylesheet" href="css/notes.css">
 
+  <!-- Playlists CSS -->
+  <link rel="stylesheet" href="css/playlists.css">
+
   <!-- Section CSS -->
   <link rel="stylesheet" href="css/sections.css">
 
@@ -74,22 +77,30 @@
     <!-- <p>This is the gallery section</p> -->
 
     <div class="gallery-container">
-      <div class="group">
-        <div class="polaroid" data-aos="fade-left" data-aos-duration="2000">
+      <div class="group" data-aos="fade-right" data-aos-duration="2000">
+        <div class="polaroid">
           <img src="https://img.freepik.com/premium-photo/picture-couple-holding-hands-girl-holding-hands_577115-4152.jpg?w=740" alt="Image 1">
           <div class="caption">Image 1</div>
         </div>
-        <div class="polaroid" data-aos="fade-right" data-aos-duration="2000">
+        <div class="polaroid">
           <img src="https://img.freepik.com/premium-photo/picture-couple-holding-hands-girl-holding-hands_577115-4152.jpg?w=740" alt="Image 2">
           <div class="caption">Image 2</div>
         </div>
-        <div class="polaroid" data-aos="fade-left" data-aos-duration="2000">
+        <div class="polaroid">
           <img src="https://img.freepik.com/premium-photo/picture-couple-holding-hands-girl-holding-hands_577115-4152.jpg?w=740" alt="Image 3">
           <div class="caption">Image 3</div>
         </div>
-        <div class="polaroid" data-aos="fade-right" data-aos-duration="2000">
+        <div class="polaroid">
           <img src="https://img.freepik.com/premium-photo/picture-couple-holding-hands-girl-holding-hands_577115-4152.jpg?w=740" alt="Image 4">
           <div class="caption">Image 4</div>
+        </div>
+        <div class="polaroid">
+          <img src="https://img.freepik.com/premium-photo/picture-couple-holding-hands-girl-holding-hands_577115-4152.jpg?w=740" alt="Image 3">
+          <div class="caption">Image 3</div>
+        </div>
+        <div class="polaroid">
+          <img src="https://img.freepik.com/premium-photo/picture-couple-holding-hands-girl-holding-hands_577115-4152.jpg?w=740" alt="Image 3">
+          <div class="caption">Image 3</div>
         </div>
       </div>
     </div>
@@ -136,7 +147,23 @@
 
   <section id="playlists" class="playlists">
     <h2>Playlists</h2>
-    <p>This is the playlists section</p>
+    
+    <div class="track-container">
+      <div class="player-card">
+          <!-- Embed Spotify Tracks via IFrame API -->
+          <div id="embed-iframe-0"></div>
+      </div>
+      <div class="player-card">
+        <!-- Embed Spotify Tracks via IFrame API -->
+        <div id="embed-iframe-1"></div>
+    </div>
+    <div class="player-card">
+      <!-- Embed Spotify Tracks via IFrame API -->
+      <div id="embed-iframe-2"></div>
+    </div>
+  </div>
+    
+    
   </section>
   </div>
   
@@ -144,7 +171,10 @@
   <script src="js/loader.js"></script>
   <script src="js/smoothScroll.js"></script>
   <script src="js/notes.js"></script>
+  <script src="js/playlists.js"></script>
   <!-- <script src="js/galleryAnimation.js"></script> -->
+
+  <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
