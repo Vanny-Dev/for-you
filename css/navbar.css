@@ -6,7 +6,7 @@ nav {
     width: 100%;
     z-index: 10;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 1rem 2rem;
+    padding: .7rem 2rem;
     text-align: center;
     height: 60px;
   }
@@ -15,6 +15,7 @@ nav {
     list-style-type: none;
     display: flex;
     justify-content: right;
+    padding-left: 0;
   }
 
   nav ul li {
@@ -28,7 +29,6 @@ nav {
     font-weight: bold;
     transition: color 0.3s ease;
     border-bottom: 2px solid #ff4a3d;
-    padding: 5px 0;
   }
 
   nav ul li a:hover {
@@ -45,27 +45,10 @@ nav {
     font-size: 15px;
   }
 
-  /* Sections */
-  section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 5rem;
-    text-align: center;
-  }
-
-  .home {
-    background-color: #fdf2f2;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-
-  .gallery {
-    background-color: #f7e8e8;
-  }
-
-  .notes {
-    background-color: #f8d0d4;
+  @media (max-width: 800px) {
+    nav ul {
+      justify-content: center;
+    }
   }
 
   @media (max-width: 600px) {
