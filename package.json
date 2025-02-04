@@ -1,0 +1,12 @@
+{
+  "name": "for-you",
+  "version": "1.0.0",
+  "description": "Valentine's Surprise Confession using HTML, CSS, and JavaScript.",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Vanny-Dev",
+  "license": "ISC"
+}
