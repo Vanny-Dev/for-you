@@ -184,6 +184,8 @@
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     interact('.player-card').draggable({
+      manualStart: false,
+      pointerMoveThreshold: 5,
       inertia: true,
       modifiers: [
         interact.modifiers.restrictRect({
@@ -191,7 +193,7 @@
           endOnly: true
         })
       ],
-      autoScroll: true,
+      autoScroll: false,
       listeners: {
         move: dragMoveListener,
         end(event) {
