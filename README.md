@@ -27,8 +27,8 @@ Valentine's Confession is a romantic web app that lets users express their feeli
 Explain how to use the project, including necessary commands or instructions.
 
 ## Contributors
-- [Your Name](https://github.com/Vanny-Dev) - Self-taught Developer
-- [Contributor 1](https://github.com/clark-john) - Co-Developer
+- [Jovanny De Leon](https://github.com/Vanny-Dev) - Self-taught Developer
+- [John Clark Melencio](https://github.com/clark-john) - Co-Developer
 
 ## Acknowledgements
 We would like to express our gratitude to the following individuals and organizations for their support and contributions:
