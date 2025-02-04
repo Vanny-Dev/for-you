@@ -12,9 +12,21 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
     },
     {
       uri: 'spotify:track:1DVHCvTwuwtZrpYDV4irH5', // Track 4
+    },
+    {
+      uri: 'spotify:track:2nqlM3gNBMi5Zf9MDzp2Xi', // Track 5
+    },
+    {
+      uri: 'spotify:track:6laDeljiaZLwipS49NsvNY', // Track 6
+    },
+    {
+      uri: 'spotify:track:0Qra8Ps4tJAZPqRXyehCjc', // Track 6
+    },
+    {
+      uri: 'spotify:track:16iRlyUMJVPqz62DlomMre', // Track 6
     }
   ];
-
+  
   // Function to get responsive dimensions based on screen width
   const getResponsiveDimensions = () => {
     const screenWidth = window.innerWidth;

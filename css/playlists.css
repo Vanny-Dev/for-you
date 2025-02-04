@@ -1,9 +1,9 @@
 /* Style the container to center the content */
 .track-container {
-  max-width: 100%;
+  width: 100%;
   padding-top: 20px;
   padding-bottom: 50px;
-  height: 100vh;
+  height: auto;
 }
 
 .player {
@@ -18,7 +18,7 @@
   /* Remove or change position */
   position: relative;
   /* or simply remove the property */
-  background: #fff;
+  background: #ff6f61;
   border-radius: 10px;
   padding: 20px 0 0 0;
   width: 355px;
