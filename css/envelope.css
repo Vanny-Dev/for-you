@@ -4,8 +4,8 @@
 }
 
 .wrapper {
-  height: 200px;
-  width: 300px;
+  height: 300px;
+  width: 400px;
   background-color: #ff4a3d;
   position: absolute;
   z-index: 0;
@@ -31,7 +31,7 @@
 
 /* Lid when closed */
 .lid.one {
-  border-top: 100px solid #ff6f61;
+  border-top: 150px solid #ff6f61;
   transform: rotateX(0deg);
   z-index: 3;
   transition-delay: 0.75s;
@@ -39,7 +39,7 @@
 
 /* Lid when opened */
 .lid.two {
-  border-top: 100px solid #ff4a3d;
+  border-top: 150px solid #ff4a3d;
   transform: rotateX(90deg);
   z-index: 1;
   transition-delay: 0.5s;
@@ -51,10 +51,10 @@
   width: 100%;
   top: 0;
   left: 0;
-  border-top: 100px solid transparent;
-  border-right: 150px solid #f8bbb6;
-  border-bottom: 100px solid #fab9b3;
-  border-left: 150px solid #f88b81;
+  border-top: 150px solid transparent;
+  border-right: 200px solid #f8bbb6;
+  border-bottom: 150px solid #fab9b3;
+  border-left: 200px solid #f88b81;
   z-index: 3;
   display: flex;
   justify-content: center;
@@ -91,4 +91,25 @@
 .wrapper:hover .letter {
   transform: translateY(-50px);
   transition-delay: 0.5s;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    height: 200px;
+    width: 300px;
+  }
+
+  .lid.one {
+    border-top: 100px solid #ff6f61;
+  }
+
+  .lid.two {  
+    border-top: 100px solid #ff4a3d;
+  }
+
+  .envelope {
+    border-top: 100px solid transparent;
+    border-right: 150px solid #f8bbb6;
+    border-bottom: 100px solid #fab9b3;
+    border-left: 150px solid #f88b81;
 }
