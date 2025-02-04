@@ -149,19 +149,25 @@
     <h2>Playlists</h2>
     
     <div class="track-container">
-      <div class="player-card">
+      <div class="player">
+        <div class="player-card" id="player-card-0">
           <!-- Embed Spotify Tracks via IFrame API -->
           <div id="embed-iframe-0"></div>
+        </div>
+        <div class="player-card" id="player-card-1">
+          <!-- Embed Spotify Tracks via IFrame API -->
+          <div id="embed-iframe-1"></div>
+        </div>
+        <div class="player-card" id="player-card-2">
+          <!-- Embed Spotify Tracks via IFrame API -->
+          <div id="embed-iframe-2"></div>
+        </div>
+        <div class="player-card" id="player-card-3">
+          <!-- Embed Spotify Tracks via IFrame API -->
+          <div id="embed-iframe-3"></div>
+        </div>
       </div>
-      <div class="player-card">
-        <!-- Embed Spotify Tracks via IFrame API -->
-        <div id="embed-iframe-1"></div>
     </div>
-    <div class="player-card">
-      <!-- Embed Spotify Tracks via IFrame API -->
-      <div id="embed-iframe-2"></div>
-    </div>
-  </div>
     
     
   </section>
@@ -173,6 +179,38 @@
   <script src="js/notes.js"></script>
   <script src="js/playlists.js"></script>
   <!-- <script src="js/galleryAnimation.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    interact('.player-card').draggable({
+      inertia: true,
+      modifiers: [
+        interact.modifiers.restrictRect({
+          restriction: '.track-container',
+          endOnly: true
+        })
+      ],
+      autoScroll: true,
+      listeners: {
+        move: dragMoveListener,
+        end(event) {
+          event.target.style.transition = 'all 0.3s ease-out';
+        }
+      }
+    });
+
+    function dragMoveListener(event) {
+      const target = event.target;
+      const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+      const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+      target.style.transform = `translate(${x}px, ${y}px)`;
+      target.setAttribute('data-x', x);
+      target.setAttribute('data-y', y);
+    }
+  });
+</script>
 
   <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
