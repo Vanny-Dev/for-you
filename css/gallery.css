@@ -29,8 +29,9 @@
 
 /* Polaroid style */
 .polaroid:nth-child(odd) {
-    transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
+
 .polaroid:nth-child(even) {
   transform: rotate(10deg);
 }

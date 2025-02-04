@@ -1,27 +1,28 @@
 /* Sections */
 section {
-    width: 100%;
-    min-height: 100vh;
-    padding: 2rem;
-    text-align: center; 
-  }
-  
-  #home {
-    padding: 5rem; /* para mag override eto ung naka 5rem, the rest naka 2rem */
-    background-color: #fdf2f2;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
 
-  #gallery {
-    background-color: #f7e8e8;
-  }
+#home {
+  padding: 5rem;
+  /* para mag override eto ung naka 5rem, the rest naka 2rem */
+  background-color: #fdf2f2;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-  #notes {
-    background-color: #f8d0d4;
-  }
+#gallery {
+  background-color: #f7e8e8;
+}
 
-  #playlists {
-    background-color: #f9bbc1;
-  }
+#notes {
+  background-color: #f8d0d4;
+}
+
+#playlists {
+  background-color: #f9bbc1;
+}

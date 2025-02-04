@@ -38,11 +38,11 @@ items.forEach((item, index) => {
 
 loadShow();  // Initial load
 
-next.onclick = function(){
+next.onclick = function () {
     active = active + 1 < items.length ? active + 1 : active;
     loadShow();
 }
-prev.onclick = function(){
+prev.onclick = function () {
     active = active - 1 >= 0 ? active - 1 : active;
     loadShow();
 }

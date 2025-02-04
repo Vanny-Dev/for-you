@@ -1,50 +1,51 @@
 /* Style the container to center the content */
 .track-container {
-    max-width: 100%;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    height: 100vh;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  height: 100vh;
 }
 
 .player {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    transition: transform 0.3s ease-in-out;
-  }
-
-.player-card {
-    /* Remove or change position */
-    position: relative; /* or simply remove the property */
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px 0 0 0;
-    width: 355px;
-    height: 103px;
-    text-align: center;
-    margin: 0 50px 10px 50px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    cursor: grab;
-    touch-action: none;
-    user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  transition: transform 0.3s ease-in-out;
 }
 
-  
-  .player-card:active {
-    cursor: grabbing;
+.player-card {
+  /* Remove or change position */
+  position: relative;
+  /* or simply remove the property */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 0 0 0;
+  width: 355px;
+  height: 103px;
+  text-align: center;
+  margin: 0 50px 10px 50px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+
+.player-card:active {
+  cursor: grabbing;
+}
+
+@media (max-width: 600px) {
+
+  .player-card {
+    width: 290px;
+    margin: 0 0 10px 0;
   }
+}
 
-  @media (max-width: 600px) {
 
-    .player-card {
-        width: 290px;
-        margin: 0 0 10px 0;
-    } 
- }   
-  
-
-  /* .player-card {
+/* .player-card {
     position: absolute;
     width: 200px; 
     height: 100px; 

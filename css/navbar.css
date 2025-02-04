@@ -1,74 +1,77 @@
 /* Sticky Navbar */
 nav {
-    position: fixed;
-    top: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 100%;
-    z-index: 10;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: .7rem 2rem;
-    text-align: center;
-    height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: .7rem 2rem;
+  text-align: center;
+  height: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  padding-left: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #ff6f61;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  border-bottom: 2px solid #ff4a3d;
+}
+
+nav ul li a:hover {
+  color: #ff4a3d;
+}
+
+/* Hide icons by default (show text) */
+i {
+  display: none;
+  padding: 0 5px;
+}
+
+span {
+  padding-right: 5px;
+  font-size: 15px;
+}
+
+@media (max-width: 800px) {
+  nav ul {
+    justify-content: center;
   }
+}
+
+@media (max-width: 600px) {
 
   nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: right;
-    padding-left: 0;
+    justify-content: center;
   }
 
   nav ul li {
-    margin: 0 15px;
+    margin: 0 20px;
   }
 
-  nav ul li a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    color: #ff6f61;
-    font-weight: bold;
-    transition: color 0.3s ease;
-    border-bottom: 2px solid #ff4a3d;
-  }
-
-  nav ul li a:hover {
-    color: #ff4a3d;
-  }
-
-  /* Hide icons by default (show text) */
-  i {
+  /* Hide text */
+  nav ul li a span {
     display: none;
-    padding: 0 5px;
-  }
-  span {
-    padding-right: 5px;
-    font-size: 15px;
   }
 
-  @media (max-width: 800px) {
-    nav ul {
-      justify-content: center;
-    }
-  }
-
-  @media (max-width: 600px) {
-
-    nav ul {
-      justify-content: center;
-    }
-
-    nav ul li {
-      margin: 0 20px;
-    }
-
-    /* Hide text */
-    nav ul li a span {
-      display: none;
-  }
   /* Show icons */
   nav ul li a i {
-      display: block;
-      font-size: 20px; /* Adjust icon size */
+    display: block;
+    font-size: 20px;
+    /* Adjust icon size */
   }
-    
-  }
+
+}
