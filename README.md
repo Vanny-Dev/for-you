@@ -1,11 +1,9 @@
-# Project Name
+# Valentine's Confession
 
-A brief description of your project and its purpose.
+Valentine's Confession is a romantic web app that lets users express their feelings through interactive messages, animations, and virtual love letters. 💖
 
 ## Features
-- Feature 1
-- Feature 2
-- Feature 3
+- Draggable Spotify Card UI
 
 ## Technologies Used
 - HTML
@@ -29,18 +27,16 @@ A brief description of your project and its purpose.
 Explain how to use the project, including necessary commands or instructions.
 
 ## Contributors
-- [Your Name](https://github.com/your-username) - Role/Tasks
-- [Contributor 1](https://github.com/contributor1) - Role/Tasks
-- [Contributor 2](https://github.com/contributor2) - Role/Tasks
+- [Your Name](https://github.com/Vanny-Dev) - Self-taught Developer
+- [Contributor 1](https://github.com/clark-john) - Co-Developer
 
 ## Acknowledgements
 We would like to express our gratitude to the following individuals and organizations for their support and contributions:
-- [Person/Organization] - Reason for acknowledgement
-- [Person/Organization] - Reason for acknowledgement
+- [Kate Marie Ido] - UI suggester & Tester
 
 ## License
 This project is licensed under the [MIT License](LICENSE) or any other relevant license.
 
 ## Contact
-For any questions or feedback, contact [Your Name] at [your email] or visit [your website].
+For any questions or feedback, contact [Jovanny De Leon] at [jovannydeleon2906@gmail,com] or visit [https://jovanny.surge.sh].
 
