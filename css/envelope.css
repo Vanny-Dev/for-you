@@ -112,4 +112,9 @@
     border-right: 150px solid #f8bbb6;
     border-bottom: 100px solid #fab9b3;
     border-left: 150px solid #f88b81;
+  }
+
+  .letter p {
+    font-size: 20px;
+  }
 }
