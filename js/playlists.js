@@ -49,3 +49,33 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
       IFrameAPI.createController(element, options, callback);
     });
   };
+
+  document.addEventListener('DOMContentLoaded', () => {
+    interact('.player-card').draggable({
+      manualStart: false,
+      inertia: true,
+      modifiers: [
+        interact.modifiers.restrictRect({
+          restriction: '.track-container',
+          endOnly: true
+        })
+      ],
+      autoScroll: false,
+      listeners: {
+        move: dragMoveListener,
+        end(event) {
+          event.target.style.transition = 'all 0.3s ease-out';
+        }
+      }
+    });
+
+    function dragMoveListener(event) {
+      const target = event.target;
+      const x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx;
+      const y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+      target.style.transform = `translate(${x}px, ${y}px)`;
+      target.setAttribute('data-x', x);
+      target.setAttribute('data-y', y);
+    }
+  });
