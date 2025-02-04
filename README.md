@@ -15,7 +15,7 @@ Valentine's Confession is a romantic web app that lets users express their feeli
 ## Installation
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/Vanny-Dev/for-you.git
    ```
 2. Navigate to the project directory:
    ```sh
