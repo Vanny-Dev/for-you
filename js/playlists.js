@@ -21,13 +21,13 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
   
       if (screenWidth <= 600) {
         // Mobile devices
-        return { width: '95%', height: '80' };
+        return { width: '92%', height: '80' };
       } else if (screenWidth <= 1024) {
         // Tablets
         return { width: '300', height: '80' };
       } else {
         // Desktops
-        return { width: '250', height: '80' };
+        return { width: '350', height: '80' };
       }
     };
   
