@@ -1,4 +1,4 @@
-fetch('../text-content.json')
+fetch('https://raw.githubusercontent.com/Vanny-Dev/for-you/main/text-content.json')
     .then(response => response.json())
     .then(data => {
         /*========== HOME ==========*/
