@@ -1,13 +1,20 @@
-
 document.addEventListener('DOMContentLoaded', function () {
-
     const form = document.getElementById('messageForm');
-    // Add a submit event listener to the form
+    const choiceButtons = document.querySelectorAll('.choice-btn');
+    const selectedChoice = document.getElementById('selectedChoice');
+
+    // Handle button clicks to store the selected choice
+    choiceButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            selectedChoice.value = this.value;
+            choiceButtons.forEach(btn => btn.classList.remove('btn-success')); // Reset button styles
+            this.classList.add('btn-success'); // Highlight selected button
+        });
+    });
+
     form.addEventListener('submit', function (event) {
-        // Prevent the default form submission behavior
         event.preventDefault();
 
-        // Your Email.js code here
         (function () {
             emailjs.init("62-5ufukdgYo-WQSo");
         })();
@@ -18,12 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var name = "Mayee";
         var email = "foryou@gmail.com";
-        var subject = "Prefer date for Valentine's Day";
-        var message = document.querySelector('#name').value;
+        var subject = "Preferred date for Valentine's Day";
+        var message = selectedChoice.value; // Get the selected button value
 
-        if (!name || !email || !subject || !message) {
-            alert('Please fill out all required fields.');
-            return; // Stop execution if validation fails
+        if (!message) {
+            alert('Please select a date option.');
+            return;
         }
 
         var params = {
@@ -35,14 +42,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         emailjs.send(serviceID, templateID, params)
             .then(res => {
-                send.textContent = "Message has been sent ✅"
-                //alert('Thank you, ' + params['sendername'] + '! Your message has been sent');
-
+                send.textContent = "Message has been sent ✅";
                 setTimeout(() => {
-                    send.textContent = ''
-                }, 5000)
-
-                form.reset()
+                    send.textContent = '';
+                }, 5000);
+                form.reset();
             })
             .catch(error => {
                 send.textContent = 'Message not sent.\n\n' + error;
