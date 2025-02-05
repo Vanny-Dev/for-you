@@ -25,3 +25,30 @@ body {
   transition: opacity 1s ease-in-out;
   width: 100%;
 }
+
+.yes-or-no-btn {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  align-items: center;  /* Align buttons vertically if needed */
+  margin-top: auto;  /* Push this div to the bottom of the container */
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;  /* Adjust the size of the button */
+  font-size: 18px;  /* Set font size */
+  border: none;  /* Remove default border */
+  cursor: pointer;  /* Change cursor to pointer when hovering */
+}
+
+#yes-btn {
+  background-color: #4CAF50;  /* Green background */
+  color: white;  /* White text */
+  border-radius: 12px;  /* Rounded corners */
+}
+
+#no-btn {
+  background-color: #f44336;  /* Red background */
+  color: white;  /* White text */
+  border-radius: 12px;  /* Rounded corners */
+}

@@ -1,6 +1,9 @@
 .envelope-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;  /* Stack the children vertically */
+  justify-content: space-between;
 }
 
 .wrapper {
@@ -93,7 +96,7 @@
   transition-delay: 0.5s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .wrapper {
     height: 200px;
     width: 300px;

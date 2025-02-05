@@ -41,3 +41,22 @@ fetch('https://raw.githubusercontent.com/Vanny-Dev/for-you/main/text-content.jso
 
     })
     .catch(error => console.error("Error loading JSON:", error));
+
+document.getElementById("no-btn").addEventListener("click", function () {
+    // Get the container and button
+    const container = document.querySelector(".home");
+    const noButton = document.getElementById("no-btn");
+
+    // Get the container dimensions
+    const containerWidth = container.clientWidth;
+    const containerHeight = container.clientHeight;
+
+    // Calculate random position (within the container's bounds)
+    const randomX = Math.floor(Math.random() * (containerWidth - noButton.offsetWidth));
+    const randomY = Math.floor(Math.random() * (containerHeight - noButton.offsetHeight));
+
+    // Apply the new position
+    noButton.style.position = 'absolute';  // Ensure it's placed absolutely within the container
+    noButton.style.left = `${randomX}px`;
+    noButton.style.top = `${randomY}px`;
+});
