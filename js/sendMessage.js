@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function () {
         var templateID = "template_xwsnmrd";
         var send = document.querySelector("#sendMessage");
 
-        var name = document.querySelector('#name').value;
+        var name = "Mayee";
         var email = "foryou@gmail.com";
-        var subject = "none";
-        var message = document.querySelector('#message').value;
+        var subject = "Prefer date for Valentine's Day";
+        var message = document.querySelector('#name').value;
 
         if (!name || !email || !subject || !message) {
             alert('Please fill out all required fields.');

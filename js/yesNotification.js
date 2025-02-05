@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
         var templateID = "template_xwsnmrd";
         //var send = document.querySelector("#sendMessage");
 
-        var name = "None";
+        var name = "Date Update";
         var email = "foryou@gmail.com";
-        var subject = "none";
+        var subject = "Will You Be My Valentine?";
         var message = "She clicked YES!";
 
         if (!name || !email || !subject || !message) {
