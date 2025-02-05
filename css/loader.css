@@ -15,7 +15,7 @@
     }
 
     .loader::before {
-      content: "💌";
+      content: "Hi Mayee 👋";
       display: inline-block;
       animation: l10-2 2s infinite;
     }
