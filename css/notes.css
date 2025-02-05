@@ -53,4 +53,8 @@
         font-size: 14px;
         left: calc(50% - 125px);
     }
+
+    .item p {
+        font-size: 20px;
+    }
 }
