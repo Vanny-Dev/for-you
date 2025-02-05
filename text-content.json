@@ -1,0 +1,39 @@
+{
+    "home": {
+        "heading": "My Confession For You",
+        "letter": "Will You Be My Valentine?"
+    },
+    "gallery": {
+        "heading": "Photos That We Got Together",
+        "date": [
+            "May 30, 2024",
+            "May 31, 2024",
+            "June 1, 2024",
+            "January 29, 2025"
+        ]
+    },
+    "notes": {
+        "heading" : "Unsaid Feelings & Thoughts",
+        "title": [
+            "Why Does She Stand Out?",
+            "Her Smile",
+            "The Little Things She Does",
+            "What If She Knew?",
+            "Her Voice",
+            "The Way She Sees the World",
+            "Does She See Me the Same Way?"
+        ],
+        "text": [
+            "She isn't just beautiful—she has this energy that makes everything feel lighter. The way she talks, the way she laughs, it's different. It’s like she doesn’t even try, yet she leaves an impact.",
+            "There’s something about her smile. It’s not just the way it looks, but the way it makes me feel. Like the world pauses for a second, and suddenly, nothing else matters.",
+            "She fixes her hair when she's thinking. She taps her fingers when she’s lost in thought. She always listens, even when she doesn’t have to. It’s the little things that make her unforgettable.",
+            "If she knew how much I admire her, would things change? Would she smile the same way? Would she look at me differently? Or has she known all along?",
+            "Her voice isn’t just a sound—it’s a feeling. Whether she’s excited, annoyed, or just casually talking, there’s always warmth in it. It’s the kind of voice that stays in your head long after she’s gone.",
+            "She doesn’t just exist—she notices things. The way the sky changes color, the way music feels, the way people act when they think no one is watching. And that’s what makes her different.",
+            "I wonder if she ever pauses and thinks about me the way I think about her. If she notices the things I do. If she admires something about me the way I admire everything about her."
+        ]
+    },
+    "playlists": {
+        "heading": "Songs That Remind Me Of You"
+    }
+}
