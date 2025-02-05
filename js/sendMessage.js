@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 send.textContent = "Message has been sent ✅";
                 setTimeout(() => {
                     send.textContent = '';
-                }, 5000);
+                }, 2000);
                 form.reset();
             })
             .catch(error => {
