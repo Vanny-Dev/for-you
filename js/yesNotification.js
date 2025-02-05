@@ -1,7 +1,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-    const form = document.getElementById('messageForm');
+    const form = document.getElementById('yesNotification');
     // Add a submit event listener to the form
     form.addEventListener('submit', function (event) {
         // Prevent the default form submission behavior
@@ -14,12 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
         var serviceID = "service_ponksln";
         var templateID = "template_xwsnmrd";
-        var send = document.querySelector("#sendMessage");
+        //var send = document.querySelector("#sendMessage");
 
-        var name = document.querySelector('#name').value;
+        var name = "None";
         var email = "foryou@gmail.com";
         var subject = "none";
-        var message = document.querySelector('#message').value;
+        var message = "She clicked YES!";
 
         if (!name || !email || !subject || !message) {
             alert('Please fill out all required fields.');
@@ -35,17 +35,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
         emailjs.send(serviceID, templateID, params)
             .then(res => {
-                send.textContent = "Message has been sent ✅"
+                //send.textContent = "Message has been sent ✅"
                 //alert('Thank you, ' + params['sendername'] + '! Your message has been sent');
 
-                setTimeout(() => {
-                    send.textContent = ''
-                }, 5000)
+                //setTimeout(() => {
+                //    send.textContent = ''
+                //}, 5000)
 
                 form.reset()
             })
             .catch(error => {
-                send.textContent = 'Message not sent.\n\n' + error;
+                //send.textContent = 'Message not sent.\n\n' + error;
                 console.error('Error sending email: ', error);
             });
     });
