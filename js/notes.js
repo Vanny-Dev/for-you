@@ -2,7 +2,7 @@ let items = document.querySelectorAll('.slider .item');
 let next = document.getElementById('next');
 let prev = document.getElementById('prev');
 
-let active = 3; // The active index you want to start with.
+let active = 0; // The active index you want to start with.
 
 function loadShow() {
     let stt = 0;

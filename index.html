@@ -102,7 +102,26 @@
         <button id="no-btn">No</button>
       </div>
 
-      <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+      <div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Yeyyyyyy!!!</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
+              </button>
+            </div>
+            <div class="modal-body">
+              <h3>Glad to hear from you</h3>
+              <h3>I'll go there, see you on the 15th of February at 4pm</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendmessageModal">Next</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="sendmessageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered"> <!-- Ensures vertical centering -->
           <div class="modal-content">
             <div class="modal-header">
