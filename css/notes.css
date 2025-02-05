@@ -29,6 +29,10 @@
     /* Full opacity on hover */
 }
 
+.item p {
+    font-size: 18px;
+}
+
 #prev,
 #next {
     font-size: 30px;
