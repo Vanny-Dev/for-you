@@ -1,6 +1,6 @@
     /* Loader */
     .loader {
-      width: 15%;
+      width: 25%;
       font-size: 17px;
       font-family: monospace;
       line-height: 1.4;
@@ -93,4 +93,10 @@
       align-items: center;
       z-index: 99;
       position: absolute;
+    }
+
+    @media (max-width: 720px) {
+      .loader {
+        width: 50%;
+      }
     }
