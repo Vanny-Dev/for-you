@@ -11,6 +11,7 @@ Valentine's Confession is a romantic web app that lets users express their feeli
 - JavaScript
 - Libraries
 - CSS Frameworks
+- EmailJS
 
 ## Installation
 1. Clone the repository:
@@ -19,7 +20,7 @@ Valentine's Confession is a romantic web app that lets users express their feeli
    ```
 2. Navigate to the project directory:
    ```sh
-   cd your-repo
+   cd for-you
    ```
 3. Open `index.html` in a browser.
 
@@ -32,7 +33,8 @@ Explain how to use the project, including necessary commands or instructions.
 
 ## Acknowledgements
 We would like to express our gratitude to the following individuals and organizations for their support and contributions:
-- [Kate Marie Ido] - UI suggester & Tester
+- [Kate Marie] - Idea Suggester
+- [Laurice May] - Idea Suggester
 
 ## License
 This project is licensed under the [MIT License](LICENSE) or any other relevant license.
