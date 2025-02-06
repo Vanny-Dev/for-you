@@ -13,16 +13,20 @@ section {
   display: flex;
   align-items: center;
   flex-direction: column;
+  font-family: 'Honess', sans-serif;
 }
 
 #gallery {
   background-color: #f7e8e8;
+  font-family: 'Honess', sans-serif;
 }
 
 #notes {
   background-color: #f8d0d4;
+  font-family: 'Honess', sans-serif;
 }
 
 #playlists {
   background-color: #f9bbc1;
+  font-family: 'Honess', sans-serif;
 }
