@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
             emailjs.init("62-5ufukdgYo-WQSo");
         })();
 
-        var serviceID = "service_ponksln";
-        var templateID = "template_xwsnmrd";
+        var serviceID = "SERVICE_ID";
+        var templateID = "TEMPLATE_ID";
         //var send = document.querySelector("#sendMessage");
 
         var name = "Date Update";
