@@ -19,11 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
             emailjs.init("62-5ufukdgYo-WQSo");
         })();
 
-        var serviceID = "service_ponksln";
-        var templateID = "template_xwsnmrd";
+        var serviceID = "SERVICE_ID";
+        var templateID = "TEMPLATE_ID";
         var send = document.querySelector("#sendMessage");
 
-        var name = "Mayee";
+        var name = "Name";
         var email = "foryou@gmail.com";
         var subject = "Preferred date for Valentine's Day";
         var message = selectedChoice.value; // Get the selected button value
